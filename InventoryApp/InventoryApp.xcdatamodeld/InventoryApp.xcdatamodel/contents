@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CurrentTech" representedClassName="PRODUCT_MODULE_NAME.CurrentTech" syncable="YES">
+        <attribute name="isActive" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="siteId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="techId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DeviceHistory" representedClassName="PRODUCT_MODULE_NAME.DeviceHistory" syncable="YES">
+        <attribute name="inventoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="siteId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="techId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploadDate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="IcomsExDetails" representedClassName="PRODUCT_MODULE_NAME.IcomsExDetails" syncable="YES">
+        <attribute name="inventoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MatchedDevices" representedClassName="PRODUCT_MODULE_NAME.MatchedDevices" syncable="YES">
+        <attribute name="inventoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ScannedItems" representedClassName="PRODUCT_MODULE_NAME.ScannedItems" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="siteId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="techId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TruckExDetails" representedClassName="PRODUCT_MODULE_NAME.TruckExDetails" syncable="YES">
+        <attribute name="inventoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CurrentTech" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="ScannedItems" positionX="-54" positionY="18" width="128" height="105"/>
+        <element name="DeviceHistory" positionX="-36" positionY="45" width="128" height="105"/>
+        <element name="IcomsExDetails" positionX="-18" positionY="72" width="128" height="105"/>
+        <element name="TruckExDetails" positionX="0" positionY="90" width="128" height="105"/>
+        <element name="MatchedDevices" positionX="18" positionY="108" width="128" height="90"/>
+    </elements>
 </model>
