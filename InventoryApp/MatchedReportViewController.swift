@@ -13,6 +13,12 @@ class MatchedReportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        if splitViewController?.respondsToSelector("displayModeButtonItem") == true {
+            navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+            navigationItem.leftItemsSupplementBackButton = true
+        }
+
         // Do any additional setup after loading the view.
     }
 

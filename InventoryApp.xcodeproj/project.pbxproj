@@ -29,7 +29,6 @@
 		E9B0A36A1B3B8B650018B176 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0A3691B3B8B650018B176 /* LoginViewController.swift */; };
 		E9B0A3A81B3D93D70018B176 /* AppCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0A3A71B3D93D70018B176 /* AppCommon.swift */; };
 		E9B0A3AD1B3D972E0018B176 /* TechIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0A3AC1B3D972E0018B176 /* TechIdViewController.swift */; };
-		E9F5B6291B4ACD8900DD31E2 /* ScanItemsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F5B6281B4ACD8900DD31E2 /* ScanItemsTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +68,6 @@
 		E9B0A3691B3B8B650018B176 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9B0A3A71B3D93D70018B176 /* AppCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommon.swift; sourceTree = "<group>"; };
 		E9B0A3AC1B3D972E0018B176 /* TechIdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechIdViewController.swift; sourceTree = "<group>"; };
-		E9F5B6281B4ACD8900DD31E2 /* ScanItemsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanItemsTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 		E9B0A3241B3B32EA0018B176 = {
 			isa = PBXGroup;
 			children = (
-				E9F5B6281B4ACD8900DD31E2 /* ScanItemsTable.swift */,
 				E9B0A32F1B3B32EA0018B176 /* InventoryApp */,
 				E9B0A3481B3B32EA0018B176 /* InventoryAppTests */,
 				E9B0A32E1B3B32EA0018B176 /* Products */,
@@ -112,12 +109,13 @@
 		E9B0A32F1B3B32EA0018B176 /* InventoryApp */ = {
 			isa = PBXGroup;
 			children = (
+				E9F3D1951B4AF2FB00D660E8 /* Util */,
+				E9F3D1941B4AF2EC00D660E8 /* DAO */,
 				E9B0A3A61B3D93BD0018B176 /* Common */,
 				E9B0A3561B3B33090018B176 /* View */,
 				E9B0A3551B3B32FE0018B176 /* Controller */,
 				E9B0A3321B3B32EA0018B176 /* AppDelegate.swift */,
 				E94215CE1B44721A0038017B /* Main.storyboard */,
-				E94215D11B4588890038017B /* MatchedReportViewController.swift */,
 				E9B0A3371B3B32EA0018B176 /* ViewController.swift */,
 				E9B0A33C1B3B32EA0018B176 /* Images.xcassets */,
 				E9B0A33E1B3B32EA0018B176 /* LaunchScreen.xib */,
@@ -163,6 +161,7 @@
 				E9B0A3AC1B3D972E0018B176 /* TechIdViewController.swift */,
 				E9A596291B44646900F3561E /* ReportMasterSplitTableViewController.swift */,
 				E9A5962B1B44689800F3561E /* ICOMSExceptionDetailViewController.swift */,
+				E94215D11B4588890038017B /* MatchedReportViewController.swift */,
 				E9A5962D1B4468A900F3561E /* TruckExceptionDetailViewController.swift */,
 				E9A5962F1B4468DC00F3561E /* ReportDetailSplitViewController.swift */,
 			);
@@ -185,6 +184,20 @@
 				E9B0A3A71B3D93D70018B176 /* AppCommon.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		E9F3D1941B4AF2EC00D660E8 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		E9F3D1951B4AF2FB00D660E8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +315,6 @@
 				E9B0A3641B3B52090018B176 /* HistoryViewController.swift in Sources */,
 				E9A5962A1B44646900F3561E /* ReportMasterSplitTableViewController.swift in Sources */,
 				E9B0A3601B3B4D370018B176 /* ReportTableViewCell.swift in Sources */,
-				E9F5B6291B4ACD8900DD31E2 /* ScanItemsTable.swift in Sources */,
 				E9A5962E1B4468A900F3561E /* TruckExceptionDetailViewController.swift in Sources */,
 				E9A596301B4468DC00F3561E /* ReportDetailSplitViewController.swift in Sources */,
 				E9B0A36A1B3B8B650018B176 /* LoginViewController.swift in Sources */,

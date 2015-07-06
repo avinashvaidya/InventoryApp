@@ -14,7 +14,7 @@ protocol ReportOptionSelectionDeletegate: class {
 
 class ReportMasterSplitTableViewController: UITableViewController,UITableViewDelegate {
 
-   // var detailViewController : ReportDetailSplitViewController? = nil
+    var detailViewController : ReportDetailSplitViewController? = nil
     
     
     // weak var delegate : ReportOptionSelectionDeletegate?
@@ -32,6 +32,7 @@ class ReportMasterSplitTableViewController: UITableViewController,UITableViewDel
             //self.detailViewController?.delegate = self
         }
         */
+        
     }
     
     func didSelectMenuItem(item:String){
@@ -44,7 +45,6 @@ class ReportMasterSplitTableViewController: UITableViewController,UITableViewDel
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
@@ -65,7 +65,7 @@ class ReportMasterSplitTableViewController: UITableViewController,UITableViewDel
         return cell
     }
     
-
+/*
     
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -78,7 +78,7 @@ class ReportMasterSplitTableViewController: UITableViewController,UITableViewDel
     
     }
 
-
+*/
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "showReportDetailSegue") {
