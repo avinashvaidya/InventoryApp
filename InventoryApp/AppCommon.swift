@@ -12,4 +12,6 @@ class AppCommon {
     
     var techId:String?
     
+    //avi
+    
 }
